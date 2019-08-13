@@ -1,0 +1,9 @@
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgb(64, 125, 161);
+  color: #e8f80c;
+  padding: 1.5em;
+}
