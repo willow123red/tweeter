@@ -1,0 +1,25 @@
+.new-tweet textarea {
+  width: 100%;
+  font-size: 35px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-color: blue;
+  border-bottom-width: .3em;
+  border-left-width: 0;
+  background: transparent;
+  
+}
+
+.new-tweet input {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 1em;
+  background-color: darkcyan;
+  
+}
+
+.counter {
+  float: right;
+  font-weight: bold;
+  margin-top: 1em;
+}

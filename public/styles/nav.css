@@ -1,9 +1,34 @@
 nav {
   position: fixed;
   height: 120px;
+  font-family: 'Bungee', cursive;
   width: 100%;
-  z-index: 1;
+  z-index: auto;
   background-color: rgb(64, 125, 161);
   color: #e8f80c;
-  padding: 1.5em;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title {
+  padding-left: 1.5em;
+}
+
+.new-tweet {
+  padding-right: 1.5em;
+}
+
+.pointer {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cta-container {
+  position: relative;
+  display: inline-block;
 }
