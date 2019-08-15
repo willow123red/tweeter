@@ -21,12 +21,6 @@
   <link rel="stylesheet" href="styles/tweet-container.css" type="text/css" />
 
 
-  <!-- External JS -->
-  <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
-
-  <!-- App JS -->
-  <script type="text/javascript" src="scripts/app.js"></script>
-  <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
 </head>
 
 <body>
@@ -60,27 +54,17 @@
         <span class="counter">140</span>
       </form>
     </section>
-    <article class="tweet">
-      <section class="tweet__header">
-        <figure class="tweet__header__figure">
-          <img class="tweet__header__icon" alt="" height="70" src="images/profile-hex.png">
-          <figcaption class="tweet__header__username">John Rambo</figcaption>
-        </figure>
-        <p class="tweet__header__handle">@loremipsum</p>
-      </section>
-      <p class="tweet__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis perferendis quas nulla.
-        At assumenda et esse neque cupiditate, iste tenetur corrupti odio quis laborum facere doloribus. Optio sequi
-        nihil aliquam.</p>
-      <section class="tweet__footer">
-        <p class="tweet__footer__timestamp">2019/08/14</p>
-        <div class="tweet__footer__buttons">
-        <i class="fas fa-flag"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="fas fa-heart"></i>
-      </div>
-      </section>
-    </article>
+    <section id="tweets">
+
+    </section>
   </main>
+  <!-- External JS -->
+  <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
+
+  <!-- App JS -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
+
 </body>
 
 </html>
