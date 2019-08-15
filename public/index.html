@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/normalize-4.1.1.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap" rel="stylesheet">
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="vendor/normalize-4.1.1.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="styles/tweet-container.css" type="text/css" />
 
 
-    <!-- External JS -->
-    <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
+  <!-- External JS -->
+  <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
-  </head>
+  <!-- App JS -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
+</head>
 
-  <body>
+<body>
 
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span class= "nav-title">tweeter</span>
-      <p class="cta-container">
-          <span class= "new-tweet">Write a new tweet!</span>
-          <span class= "pointer">&#9759;</span>
-      </p>
-      </nav>
-    <header>
-      <div class= "avatar">
-        <img src="images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Lucas Wilson</h2>
-      </div>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="nav-title">tweeter</span>
+    <p class="cta-container">
+      <span class="new-tweet">Write a new tweet!</span>
+      <span class="pointer">&#9759;</span>
+    </p>
+  </nav>
+  <header>
+    <div class="avatar">
+      <img src="images/profile-hex.png">
+    </div>
+    <br>
+    <div>
+      <h2>Lucas Wilson</h2>
+    </div>
   </header>
 
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-        <section class="new-tweet">
-            <h2>Compose Tweet</h2>
-            <form action="http://localhost:8080/tweets" method="POST">
-              <textarea name="text" placeholder="What are you humming about?"></textarea>
-              <input type="submit" value="Tweet">
-              <span class="counter">140</span>
-            </form>
-          </section>
-    </main>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form action="http://localhost:8080/tweets" method="POST">
+        <textarea name="text" placeholder="What are you humming about?"></textarea>
+        <input type="submit" value="Tweet">
+        <span class="counter">140</span>
+      </form>
+    </section>
+    <article class="tweet">
+      <section class="tweet__header">
+        <img class="tweet__header__icon" src="images/profile-hex.png">
+        <h4 class="tweet__header__username">John Rambo</h4>
+        <p class="tweet__header__handle">@loremipsum</p>
+      </section>
+      <p class="tweet__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis perferendis quas nulla. At assumenda et esse neque cupiditate, iste tenetur corrupti odio quis laborum facere doloribus. Optio sequi nihil aliquam.</p>
+      <section class="tweet__footer">
+        <p class="tweet__footer__timestamp">2019/08/14</p>
+        <div class="tweet__footer__buttons">123</div>
+      </section>
 
-  </body>
+
+    </article>
+  </main>
+
+</body>
+
 </html>

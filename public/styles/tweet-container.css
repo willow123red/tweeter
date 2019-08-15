@@ -1,0 +1,26 @@
+.tweet-container {
+  border: .2em solid blue;
+  margin: 2px;
+
+
+}
+
+h3 {
+  display: inline;
+}
+
+
+.user-icon {
+  position: relative;
+  width: 2em;
+  height: 2em;
+    
+}
+
+.user-name {
+  float: right;
+  height: 1em;
+  display: inline;
+  
+}
+

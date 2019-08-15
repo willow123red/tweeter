@@ -5,7 +5,7 @@ $(document).ready(function () {
     let maxLength = 140;
     let inputLength = this.value.length;
 
-    length = maxLength - inputLength;
+    let length = maxLength - inputLength;
     $(`.counter`).text(length);
 
     length > 0 ?

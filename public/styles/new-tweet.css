@@ -6,16 +6,14 @@
   border-bottom-color: blue;
   border-bottom-width: .3em;
   border-left-width: 0;
-  background: transparent;
-   
+  background: transparent;   
 }
 
 .new-tweet input {
   font-weight: bold;
   font-size: 25px;
   margin-top: 1em;
-  background-color: darkcyan;
-  
+  background-color: darkcyan;  
 }
 
 .counter {
