@@ -1,26 +1,74 @@
-.tweet-container {
+.tweet {
+  display: block;
   border: .2em solid blue;
-  margin: 2px;
-
-
-}
-
-h3 {
-  display: inline;
-}
-
-
-.user-icon {
-  position: relative;
-  width: 2em;
-  height: 2em;
-    
-}
-
-.user-name {
-  float: right;
-  height: 1em;
-  display: inline;
+  margin: 0;
+  height: 300px;
+  width:100%;
+  justify-content: center;
   
 }
 
+.tweet:hover {
+  box-shadow: 10px 10px 5px grey;
+  
+}
+
+.tweet__header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.tweet__header__figure {
+  display: flex;
+  padding-left: 0;
+  padding-top: 0;
+  margin-left: .5em;
+  margin-top: .5em;
+}
+.tweet__header__icon {
+  padding-left: 0;
+  border: 0;
+
+}
+
+.tweet__header__username {
+ padding-left: .5em;
+ 
+}
+
+.tweet__header__handle {
+  padding-right: .5em;
+}
+
+.tweet__body {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin-bottom: 0;
+  
+}
+
+.tweet__footer {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.tweet__footer__timestamp {
+  padding-left: .5em;
+  margin: 0;
+}
+
+.tweet__footer__buttons {
+  padding-right: 1em;
+  margin: 0;
+}
