@@ -50,7 +50,12 @@ $(document).ready(function () {
   // Stop redirection of page to tweets and capture form data
   $form.submit(function (event) {
     event.preventDefault();
-    const formData = $(this).serialize();
+    const $textarea = $('#tweetTextArea');
+    const userInput = $textarea.val();
+    if (userInput.trim() === "") {
+      alert("tweet not present")
+    } else {
+      const formData = $(this).serialize();
     $.ajax({
         url: '/tweets',
         type: 'POST',
@@ -59,5 +64,8 @@ $(document).ready(function () {
       .then(function (tweet) {
         loadtweets(tweet);
       });
+    }
+    
+    
   });
 });
