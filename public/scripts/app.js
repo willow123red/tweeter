@@ -4,6 +4,11 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 // Fake data taken from initial-tweets.json
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
 
 const createTweetElement = function (tweet) {
   return `<article>
@@ -14,7 +19,7 @@ const createTweetElement = function (tweet) {
     </figure>
     <p>${tweet.user.handle}</p>
   </header>
-  <p>${tweet.content.text}.</p>
+  <p>${escape(tweet.content.text)}</p>
   <footer>
     <p>${tweet.created_at}</p>
     <div>
