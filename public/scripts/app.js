@@ -38,7 +38,11 @@ const renderTweets = function (tweets) {
 }
 
 $(document).ready(function () {
-  const $form = $('#tweet-form');
+  const $form = $('#tweet-form').hide();
+  const $toggle = $('.tweetFormToggle');
+  $toggle.on("click", function() {
+    $form.slideToggle(200);
+  });
 
   // Load tweets from server
   const loadtweets = function () {
