@@ -37,35 +37,35 @@ $(document).ready(function () {
 
   // Load tweets from server
   const loadtweets = function () {
-    $form.submit(function () {
-      $.ajax('/tweets', {
-          method: 'GET'
-        })
-        .then(function (tweets) {
-          renderTweets(tweets)
-        });
-    });
+    return $.ajax('/tweets', {
+        method: 'GET'
+      })
+      .then(function (tweets) {
+        renderTweets(tweets)
+      });
   }
 
   // Stop redirection of page to tweets and capture form data
   $form.submit(function (event) {
     event.preventDefault();
     const $textarea = $('#tweetTextArea');
-    const userInput = $textarea.val();
-    if (userInput.trim() === "") {
-      alert("tweet not present")
+    const userInput = $textarea.val().trim();
+    if (userInput === "") {
+      alert("tweet is empty")
+    } else if (userInput.length > parseInt($textarea.attr("data-maxlength"))) {
+      alert("tweet is more than 140 characters")
     } else {
       const formData = $(this).serialize();
-    $.ajax({
-        url: '/tweets',
-        type: 'POST',
-        data: formData
-      })
-      .then(function (tweet) {
-        loadtweets(tweet);
-      });
+      $.ajax({
+          url: '/tweets',
+          type: 'POST',
+          data: formData
+        })
+        .then(function (tweet) {
+          return loadtweets(tweet);
+        });
     }
-    
-    
+
+
   });
 });
