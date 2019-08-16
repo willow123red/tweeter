@@ -1,4 +1,4 @@
-.new-tweet textarea {
+.write-tweet textarea {
   width: 100%;
   font-size: 35px;
   border-top-width: 0;
@@ -9,7 +9,7 @@
   background: transparent;   
 }
 
-.new-tweet input {
+.write-tweet input {
   font-weight: bold;
   font-size: 25px;
   margin-top: 1em;

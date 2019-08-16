@@ -1,74 +1,81 @@
 #tweets{
   display: block;
-  border: .2em solid blue;
   margin: 0;
-  height: 300px;
   width:100%;
-  justify-content: center;
-  
 }
 
-.tweet:hover {
-  box-shadow: 10px 10px 5px grey;
-  
+#tweets article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border: .2em solid blue;
+  margin-bottom: 1em;
+  min-height: 270px;
+  width:100%;
 }
 
-.tweet__header {
-  position: relative;
+#tweets article:first-child {
+  margin-top: 2em;
+}
+
+#tweets article:hover {
+  box-shadow: 10px 10px 5px grey;   
+}
+
+#tweets article > header {
   width: 100%;
-  height: 60px;
+  height: calc(70px + 0.5em);
   margin: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-left: 0;
+  padding: .5em;
+
 }
 
-.tweet__header__figure {
+#tweets article > header > figure {
   display: flex;
   padding-left: 0;
   padding-top: 0;
-  margin-left: .5em;
-  margin-top: .5em;
+  margin: 0;
+  align-items: center;
 }
-.tweet__header__icon {
+
+#tweets article > header > figure > img {
   padding-left: 0;
   border: 0;
-
 }
 
-.tweet__header__username {
+#tweets article > header > figure > figcaption {
  padding-left: .5em;
  
 }
 
-.tweet__header__handle {
-  padding-right: .5em;
+#tweets article > header > p {
+  margin: 0;
 }
 
-.tweet__body {
+#tweets article > p {
   position: relative;
   width: 100%;
-  height: 140px;
-  padding-top: 1em;
-  padding-left: .5em;
-  padding-right: .5em;
-  margin-bottom: 0;
-  
+  margin: 0;
+  padding: .5em; 
 }
 
-.tweet__footer {
+#tweets article > footer {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 80px;
+  height: 60px;
   justify-content: space-between;
 }
 
-.tweet__footer__timestamp {
+#tweets article > footer > p {
   padding-left: .5em;
   margin: 0;
 }
 
-.tweet__footer__buttons {
+#tweets article > footer > div {
   padding-right: 1em;
   margin: 0;
 }

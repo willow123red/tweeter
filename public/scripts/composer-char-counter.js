@@ -1,7 +1,7 @@
 $(document).ready(function () {
   console.log("I'm ready");
 
-  $(`textarea`).keyup(function () {
+  $(`textarea`).on("input", function () {
     let maxLength = 140;
     let inputLength = this.value.length;
 
@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(`.counter`).text(length);
 
     length > 0 ?
-      $(`.counter`).css("color", "blue") :
+      $(`.counter`).css("color", "green") :
       $(`.counter`).css("color", "red");
 
     console.log(this.value.length);
