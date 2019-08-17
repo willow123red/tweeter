@@ -11,3 +11,42 @@ nav + header {
 avatar {
   text-align: center;
 }
+
+[role=alertdialog] {
+  position: static;
+}
+
+ /* Tablet: minimum width of 768px to maximum width of 1024px */
+ @media only screen and (min-width: 768px and max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  nav + header {
+   
+  }
+  
+  avatar {
+   
+  }
+  
+  [role=alertdialog] {
+    
+  }
+
+}
+
+ /* Laptops / Desktops: minimum width of 1024px */
+ @media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  nav + header {
+   
+  }
+  
+  avatar {
+   
+  }
+  
+  [role=alertdialog] {
+    
+  }
+
+}
+

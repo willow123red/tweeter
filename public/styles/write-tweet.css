@@ -22,3 +22,35 @@
   margin-top: 1em;
   color: blue;
 }
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 768px and max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  .write-tweet textarea {
+    
+  }
+  
+  .write-tweet input {
+  }
+  
+  .counter {
+
+  }
+  
+
+}
+
+ /* Laptops / Desktops: minimum width of 1024px */
+ @media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  .write-tweet textarea {
+  }
+  
+  .write-tweet input {
+  }
+  
+  .counter {
+
+  }
+
+}

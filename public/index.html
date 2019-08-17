@@ -3,7 +3,9 @@
 
 <head>
   <!-- Meta Information -->
+
   <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="vendor/normalize-4.1.1.css" type="text/css" />
@@ -49,6 +51,9 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="write-tweet">
+      <div role="alertdialog" aria-labelledby="error-message" id="error">
+        <p id="error-message"></p>
+      </div>
       <form id="tweet-form" action="/tweets" method="POST" novalidate>
         <textarea id="tweetTextArea" name="text" data-maxlength="140" required placeholder="What are you humming about?"></textarea>
         <input type="submit" value="Tweet">

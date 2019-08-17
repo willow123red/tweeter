@@ -54,16 +54,24 @@ $(document).ready(function () {
       });
   }
 
+  const $errorContainer = $('#error');
+  const $textarea = $('#tweetTextArea');
+
   // Stop redirection of page to tweets and capture form data
   $form.submit(function (event) {
     event.preventDefault();
-    const $textarea = $('#tweetTextArea');
+    $errorContainer.slideUp(1000);
+
     const userInput = $textarea.val().trim();
+
     if (userInput === "") {
-      alert("tweet is empty")
+      $errorContainer.slideDown(1000)
+      .find('#error-message').text("tweet is empty");
     } else if (userInput.length > parseInt($textarea.attr("data-maxlength"))) {
-      alert("tweet is more than 140 characters")
-    } else {
+      $errorContainer.slideDown(1000)
+      .find('#error-message').text("tweet is more than 140 characters")
+    } else {  
+
       const formData = $(this).serialize();
       $.ajax({
           url: '/tweets',

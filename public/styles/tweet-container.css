@@ -79,3 +79,110 @@
   padding-right: 1em;
   margin: 0;
 }
+
+#error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 768px and max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  #tweets{
+    
+  }
+  
+  #tweets article {
+   
+  }
+  
+  #tweets article:first-child {
+  }
+  
+  #tweets article:hover {
+  }
+  
+  #tweets article > header {
+  
+  }
+  
+  #tweets article > header > figure {
+  }
+  
+  #tweets article > header > figure > img {
+  }
+  
+  #tweets article > header > figure > figcaption {
+   
+  }
+  
+  #tweets article > header > p {
+  }
+  
+  #tweets article > p {
+  }
+  
+  #tweets article > footer {
+  }
+  
+  #tweets article > footer > p {
+  }
+  
+  #tweets article > footer > div {
+  }
+  
+  #error {
+  }
+  
+}
+
+ /* Laptops / Desktops: minimum width of 1024px */
+ @media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  #tweets{
+    
+  }
+  
+  #tweets article {
+   
+  }
+  
+  #tweets article:first-child {
+  }
+  
+  #tweets article:hover {
+  }
+  
+  #tweets article > header {
+  
+  }
+  
+  #tweets article > header > figure {
+  }
+  
+  #tweets article > header > figure > img {
+  }
+  
+  #tweets article > header > figure > figcaption {
+   
+  }
+  
+  #tweets article > header > p {
+  }
+  
+  #tweets article > p {
+  }
+  
+  #tweets article > footer {
+  }
+  
+  #tweets article > footer > p {
+  }
+  
+  #tweets article > footer > div {
+  }
+  
+  #error {
+  }
+}
