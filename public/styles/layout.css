@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+html, body {
+  height: 100%;
+}
+
 /*
  * Global layout stuff
  */
@@ -20,6 +24,8 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -27,11 +33,15 @@ main {
   background-color: #f4f1ec;
   margin: auto;
 }
+
+#main-container {
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  /* Tablet: minimum width of 768px to maximum width of 1024px */
- @media only screen and (min-width: 768px and max-width: 1024px) {
+ @media only screen and (min-width: 768px) {
   /* Write Tablet only CSS here */
   html {
     
@@ -46,6 +56,7 @@ main {
   
   body {
     
+
   }
   
   main {
@@ -55,25 +66,3 @@ main {
 }
 
 
- /* Laptops / Desktops: minimum width of 1024px */
- @media only screen and (min-width: 1024px) {
-  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
-  html {
-    
-  }
-  *, *:before, *:after {
-    
-  }
-  
-  /*
-   * Global layout stuff
-   */
-  
-  body {
-    
-  }
-  
-  main {
-   
-  }
-}
