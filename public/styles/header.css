@@ -5,6 +5,7 @@ header {
   text-align: center;
   background-color: #00c1db;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  margin-right: 10%; 
 }
 
 avatar {
@@ -16,9 +17,11 @@ avatar {
 }
 
  /* Tablet: minimum width of 768px to maximum width of 1024px */
- @media only screen and (min-width: 768px and max-width: 1024px) {
+ @media only screen and (min-width: 768px) {
   /* Write Tablet only CSS here */
-  nav + header {
+  header {
+
+    flex: 4;
    
   }
   

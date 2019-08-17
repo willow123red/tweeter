@@ -35,7 +35,10 @@ main {
 }
 
 #main-container {
-
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
@@ -60,7 +63,14 @@ main {
   }
   
   main {
-   
+   width: auto;
+   margin: initial;
+   flex: 4;
+  }
+  #main-container {
+    flex-direction: row;
+    padding: 48px;
+    
   }
 
 }
