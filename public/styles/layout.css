@@ -38,6 +38,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
   
 }
 /*
@@ -46,21 +47,6 @@ main {
  /* Tablet: minimum width of 768px to maximum width of 1024px */
  @media only screen and (min-width: 768px) {
   /* Write Tablet only CSS here */
-  html {
-    
-  }
-  *, *:before, *:after {
-    
-  }
-  
-  /*
-   * Global layout stuff
-   */
-  
-  body {
-    
-
-  }
   
   main {
    width: auto;
@@ -69,7 +55,7 @@ main {
   }
   #main-container {
     flex-direction: row;
-    padding: 48px;
+    padding: 72px;
     
   }
 

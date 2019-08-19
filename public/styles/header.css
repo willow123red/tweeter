@@ -1,4 +1,4 @@
-header {
+.primary {
   height: 400px;
   width: 100%;
   z-index: auto;
@@ -16,39 +16,15 @@ avatar {
   position: static;
 }
 
- /* Tablet: minimum width of 768px to maximum width of 1024px */
+ /* Tablet & Desktop: minimum width of 768px */
  @media only screen and (min-width: 768px) {
   /* Write Tablet only CSS here */
   header {
-
     flex: 4;
    
   }
   
-  avatar {
-   
-  }
-  
-  [role=alertdialog] {
-    
-  }
-
 }
 
- /* Laptops / Desktops: minimum width of 1024px */
- @media only screen and (min-width: 1024px) {
-  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
-  nav + header {
-   
-  }
-  
-  avatar {
-   
-  }
-  
-  [role=alertdialog] {
-    
-  }
-
-}
+ 
 
