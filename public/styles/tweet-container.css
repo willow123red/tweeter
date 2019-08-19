@@ -1,7 +1,7 @@
-#tweets{
+#tweets {
   display: block;
   margin: 0;
-  width:100%;
+  width: 100%;
 }
 
 #tweets article {
@@ -11,7 +11,7 @@
   border: .2em solid blue;
   margin-bottom: 1em;
   min-height: 270px;
-  width:100%;
+  width: 100%;
 }
 
 #tweets article:first-child {
@@ -19,10 +19,10 @@
 }
 
 #tweets article:hover {
-  box-shadow: 10px 10px 5px grey;   
+  box-shadow: 10px 10px 5px grey;
 }
 
-#tweets article > header {
+#tweets article>header {
   width: 100%;
   height: calc(70px + 0.5em);
   margin: 0;
@@ -33,7 +33,7 @@
 
 }
 
-#tweets article > header > figure {
+#tweets article>header>figure {
   display: flex;
   padding-left: 0;
   padding-top: 0;
@@ -41,28 +41,28 @@
   align-items: center;
 }
 
-#tweets article > header > figure > img {
+#tweets article>header>figure>img {
   padding-left: 0;
   border: 0;
 }
 
-#tweets article > header > figure > figcaption {
- padding-left: .5em;
- 
+#tweets article>header>figure>figcaption {
+  padding-left: .5em;
+
 }
 
-#tweets article > header > p {
+#tweets article>header>p {
   margin: 0;
 }
 
-#tweets article > p {
+#tweets article>p {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: .5em; 
+  padding: .5em;
 }
 
-#tweets article > footer {
+#tweets article>footer {
   display: flex;
   align-items: center;
   width: 100%;
@@ -70,14 +70,20 @@
   justify-content: space-between;
 }
 
-#tweets article > footer > p {
+#tweets article>footer>p {
   padding-left: .5em;
   margin: 0;
 }
 
-#tweets article > footer > div {
+#tweets article>footer>div {
   padding-right: 1em;
   margin: 0;
+  opacity: 0.5;
+}
+
+#tweets article>footer>div:hover {
+  color: blue;
+
 }
 
 #error {
@@ -85,4 +91,3 @@
   font-weight: bold;
   text-align: center;
 }
-

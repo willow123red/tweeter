@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 // Fake data taken from initial-tweets.json
-const escape =  function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -35,14 +35,14 @@ const createTweetElement = function (tweet) {
 
 const renderTweets = function (tweets) {
   for (let tweet of tweets) {
-    $('#tweets').append(createTweetElement(tweet));
+    $('#tweets').prepend(createTweetElement(tweet));
   }
 }
 
 $(document).ready(function () {
   const $form = $('#tweet-form').hide();
   const $toggle = $('.tweetFormToggle');
-  $toggle.on("click", function() {
+  $toggle.on("click", function () {
     $form.slideToggle(200);
   });
 
@@ -55,11 +55,14 @@ $(document).ready(function () {
         renderTweets(tweets)
       });
   }
+  loadtweets();
+
 
   const $errorContainer = $('#error');
   const $textarea = $('#tweetTextArea');
 
-  // Stop redirection of page to tweets and capture form data
+  // Stop redirection of page to tweets and capture form data,
+  // clear tweet & counter, provide error message if not correct.
   $form.submit(function (event) {
     event.preventDefault();
     $errorContainer.slideUp(1000);
@@ -68,11 +71,11 @@ $(document).ready(function () {
 
     if (userInput === "") {
       $errorContainer.slideDown(1000)
-      .find('#error-message').text("Cannot submit empty tweet");
+        .find('#error-message').text("Cannot submit empty tweet");
     } else if (userInput.length > parseInt($textarea.attr("data-maxlength"))) {
       $errorContainer.slideDown(1000)
-      .find('#error-message').text("Tweet is more than 140 characters")
-    } else {  
+        .find('#error-message').text("Tweet is more than 140 characters")
+    } else {
 
       const formData = $(this).serialize();
       $.ajax({
@@ -81,14 +84,15 @@ $(document).ready(function () {
           data: formData
         })
         .then(function (tweet) {
+          $textarea.val("").trigger("input");
           return loadtweets(tweet);
         });
     }
   });
 });
 
-// Formula taken from stack overflow
-const timeDifference = function(current, previous) {  
+// Formula taken from stack overflow for calculation
+const timeDifference = function (current, previous) {
   const msPerMinute = 60 * 1000;
   const msPerHour = msPerMinute * 60;
   const msPerDay = msPerHour * 24;
@@ -122,7 +126,3 @@ const timeDifference = function(current, previous) {
     return years + ' year' + plural + ' ago';
   }
 };
-
-
-
-

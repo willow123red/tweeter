@@ -5,7 +5,7 @@
   text-align: center;
   background-color: #00c1db;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  margin-right: 10%; 
+  margin-right: 10%;
 }
 
 avatar {
@@ -16,15 +16,12 @@ avatar {
   position: static;
 }
 
- /* Tablet & Desktop: minimum width of 768px */
- @media only screen and (min-width: 768px) {
+/* Tablet & Desktop: minimum width of 768px */
+@media only screen and (min-width: 768px) {
+
   /* Write Tablet only CSS here */
   header {
     flex: 4;
-   
   }
-  
+
 }
-
- 
-

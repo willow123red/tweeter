@@ -11,9 +11,8 @@
   <link rel="stylesheet" href="vendor/normalize-4.1.1.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,700,700i&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
-     integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe"
-     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css"
+    integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="styles/layout.css" type="text/css" />
@@ -38,32 +37,33 @@
     </p>
   </nav>
   <div id="main-container">
-  <header class="primary">
-    <div class="avatar">
-      <img alt="" src="images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Lucas Wilson</h2>
-    </div>
-  </header>
-
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="write-tweet">
-      <div role="alertdialog" aria-labelledby="error-message" id="error">
-        <p id="error-message"></p>
+    <header class="primary">
+      <div class="avatar">
+        <img alt="" src="images/profile-hex.png">
       </div>
-      <form id="tweet-form" action="/tweets" method="POST" novalidate>
-        <textarea id="tweetTextArea" name="text" data-maxlength="140" required placeholder="What are you humming about?"></textarea>
-        <input type="submit" value="Tweet">
-        <span class="counter">140</span>
-      </form>
-    </section>
-    <section id="tweets"></section>
-  </main>
-</div>
+      <br>
+      <div>
+        <h2>Lucas Wilson</h2>
+      </div>
+    </header>
+
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="write-tweet">
+        <div role="alertdialog" aria-labelledby="error-message" id="error">
+          <p id="error-message"></p>
+        </div>
+        <form id="tweet-form" action="/tweets" method="POST" novalidate>
+          <textarea id="tweetTextArea" name="text" data-maxlength="140" required
+            placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section id="tweets"></section>
+    </main>
+  </div>
   <!-- External JS -->
   <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
 
